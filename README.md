@@ -18,7 +18,7 @@ quadrotor. This simulation will be carried out in the provided FollowMeSim, whic
 and the person to be tracked.
 
 ### Data Collection
-The first step has been to take more pictures to train our network. As suggested in Data Collection Guide, three
+The first step was taking more pictures to train our network. As suggested in Data Collection Guide, three
 situations have been considered:
 * Data gathered by following the hero in a very dense crowd.
 * Data gathered while in patrol directly over the hero, while they zigzag.
