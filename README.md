@@ -26,15 +26,16 @@ situations have been considered:
 
 Below, it can be seen the paths which have been implemented in FollowMeSim.
 
-* Hero in a very dense crowd in following mode
+* Hero in a very dense crowd with quad in following mode
 
 <img src="./misc_images/run1_crowd.png" width="350" />
 
-* Hero in a very dense crowd in patrol mode
+* Hero in a very dense crowd with quad in patrol mode
 
 <img src="./misc_images/run2_short.png" width="350" />
 
 * Hero in zigzag while the quad is patrolling over it.
+
 <img src="./misc_images/run3_zigzag.png" width="350" />
 
 * Quad in standard patrol
