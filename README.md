@@ -11,7 +11,7 @@
 [withoutTarget]: ./misc_images/withoutTarget.png
 [withTarget]: ./misc_images/withTarget.png
 
-
+![Main][main]
 In this project, a Fully Convolutional Network will be implemented and trained to detect a person with a
 quadrotor. This simulation will be carried out in the provided FollowMeSim, which includes a city with people 
 and the person to be tracked.
@@ -26,15 +26,18 @@ situations have been considered:
 Below, it can be seen the paths which have been implemented in FollowMeSim.
 
 * Hero in a very dense crowd in following mode
+
 ![Run 1][run1_crowd]
 
 * Hero in a very dense crowd in patrol mode
+
 ![Run 2][run2_short]
 
 * Hero in zigzag while the quad is patrolling over it.
 ![Run 3][run3_zigzag]
 
 * Quad in standard patrol
+
 ![Run 4][PatrolPath]
 
 ### Network architecture
