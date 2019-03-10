@@ -6,11 +6,36 @@
 [run1_crowd]: ./misc_images/run1_crowd.png
 [run2_short]: ./misc_images/run2_short.png
 [run3_zigzag]: ./misc_images/run3_zigzag.png
+[PatrolPath]: ./misc_images/PatrolPath.png
 [following]: ./misc_images/following.png
 [withoutTarget]: ./misc_images/withoutTarget.png
 [withTarget]: ./misc_images/withTarget.png
 
+
+In this project, a Fully Convolutional Network will be implemented and trained to detect a person with a
+quadrotor. This simulation will be carried out in the provided FollowMeSim, which includes a city with people 
+and the person to be tracked.
+
 ### Data Collection
+The first step has been to take more pictures to train our network. As suggested in Data Collection Guide, three
+situations have been considered:
+* Data gathered by following the hero in a very dense crowd.
+* Data gathered while in patrol directly over the hero, while they zigzag.
+* Data gathered while the quad is on standard patrol.
+
+Below, it can be seen the paths which have been implemented in FollowMeSim.
+
+* Hero in a very dense crowd in following mode
+[run1_crowd]
+
+* Hero in a very dense crowd in patrol mode
+[run2_short]
+
+* Hero in zigzag while the quad is patrolling over it.
+[run3_zigzag]
+
+* Quad in standard patrol
+[PatrolPath]
 
 ### Network architecture
 
