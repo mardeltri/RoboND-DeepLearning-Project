@@ -97,8 +97,8 @@ The validation steps have been computed in a similar way.
 
 ### Results
 
-Below, loss and validation loss values during training have been depicted. It can be seen that, although, there is a slight
-spike in epoch 23, the algorithm is stable reaching a final value of 0.02 approximately.
+Below, loss and validation loss values during training have been depicted. It can be seen that, although there is a slight
+spike in epoch 23, the algorithm is stable reaching a final value of 0.0174.
 
 <img src="./misc_images/TrainingCurve.png" width="450" />
 
