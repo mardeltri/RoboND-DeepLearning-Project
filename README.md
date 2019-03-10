@@ -41,22 +41,27 @@ Below, it can be seen the paths which have been implemented in FollowMeSim.
 * Quad in standard patrol
 <img src="./misc_images/PatrolPath.png" width="350" />
 
+With those simulations the total number of train images are 7941 and 3617 validation images.
+
 ### Network architecture
+Given the type of identification that we need in this project, we will be working with Fully Convolutional Networks(FCNs).
+This kind of network is used when detecting an object between several ones. In our case, we have a person in a city
+surrounded by other people. This is made possible because fully convolutional networks preserve spatial information
+while doing the convolution.
 
-FCN
+FCNs take advantage of three special techniques:
+* Replace fully connected layers with one by one convolutional layers
+* Upsampling using trasposed convolutional layers
+* Skip connections, which allow the network to use information from multiple resolution scales. Thus, carrying out
+more precise segmentation decisions.
 
-encoder and decoder
-encoder - extracts features that will be used laater by the decoder
-Encoder -> Extract features from the layers
-decoder -> it uses a second special technique of transposed convolutional layers to upsample the image
+The network consists in three main parts, the encoder, the 1x1 convolution layer and the decoder. The encoder extracts 
+features from the layers that will be used later by the decoder, which uses a technique of transposed convolutional 
+layers to upsample the image.
 
-Replacement of fully-connected layers with convolutional layers presents an added advantage that during inference (testing your model), you can feed images of any size into your trained network.
+The implemented network has three encoders, 1x1 convolution layers and 3 decoders, as it can be seen below.
 
-One effect of convolutions or encoding in general is you narrow down the scope by looking closely 
-at some picture and lose the bigger picture as a result. So even if we were to decode the output
-of the encoder back to the original image size, some information has been lost. Skip connections
-are a way of retaining the information easily.
-
+Features Layer (?, 160, 160, 3)
 Encoder 1 (?, 80, 80, 32)
 Encoder 2 (?, 40, 40, 64)
 Encoder 3 (?, 20, 20, 128)
@@ -65,6 +70,10 @@ Decoder 1 (?, 40, 40, 128)
 Decoder 2 (?, 80, 80, 64)
 Decoder 3 (?, 80, 80, 64)
 Output Layer (?, 160, 160, 3)
+
+In the following image a squeme of the network has been depicted.
+
+<img src="./misc_images/Network.png" width="350" />
 
 ### Hyperparameters
 
