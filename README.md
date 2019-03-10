@@ -79,6 +79,13 @@ In the following image a squeme of the network has been depicted.
 
 ### Hyperparameters
 
+learning_rate = 0.001
+batch_size = 32
+num_epochs = 30
+steps_per_epoch = int(7941/batch_size)-1
+validation_steps = int(3617/batch_size)
+workers = 2
+
 ### Results
 
 ```
