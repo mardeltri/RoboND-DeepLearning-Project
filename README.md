@@ -11,7 +11,7 @@
 [withoutTarget]: ./misc_images/withoutTarget.png
 [withTarget]: ./misc_images/withTarget.png
 
-<img src="./misc_images/main.png" width="350" />
+<img src="./misc_images/main.png" width="400" />
 
 In this project, a Fully Convolutional Network will be implemented and trained to detect a person with a
 quadrotor. This simulation will be carried out in the provided FollowMeSim, which includes a city with people 
@@ -28,18 +28,18 @@ Below, it can be seen the paths which have been implemented in FollowMeSim.
 
 * Hero in a very dense crowd with quad in following mode
 
-<img src="./misc_images/run1_crowd.png" width="350" />
+<img src="./misc_images/run1_crowd.png" width="400" />
 
 * Hero in a very dense crowd with quad in patrol mode
 
-<img src="./misc_images/run2_short.png" width="350" />
+<img src="./misc_images/run2_short.png" width="400" />
 
 * Hero in zigzag while the quad is patrolling over it.
 
-<img src="./misc_images/run3_zigzag.png" width="350" />
+<img src="./misc_images/run3_zigzag.png" width="400" />
 
 * Quad in standard patrol
-<img src="./misc_images/PatrolPath.png" width="350" />
+<img src="./misc_images/PatrolPath.png" width="400" />
 
 With those simulations the total number of train images are 7941 and 3617 validation images.
 
