@@ -79,6 +79,8 @@ In the following image a squeme of the network has been depicted.
 
 ### Hyperparameters
 
+The parameters which have been used to train the network can be found below. 
+
 *learning_rate = 0.001
 *batch_size = 32
 *num_epochs = 30
@@ -86,12 +88,25 @@ In the following image a squeme of the network has been depicted.
 *validation_steps = int(3617/batch_size)
 *workers = 2
 
+Those parameters have been found by tunning manually the network. Initially, a higher learning rate value was set up, 
+but it was notice that the network was learning too fast. It was observed that increasing the number of epochs leads to
+a lower loss value, however, computing time increases, thus, a value of 30 has been found to be a good equilibrium point. 
+Steps per epoch have been set to the recommended value computed as the number of training data divided by the batch size.
+The validation steps have been computed in a similar way.
+
+
 ### Results
+
+Below, loss and validation loss values during training have been depicted. It can be seen that, although, there is a slight
+spike in epoch 23, the algorithm is stable reaching a final value of 0.02 approximately.
 
 <img src="./misc_images/TrainingCurve.png" width="450" />
 
+
+Scores are shown below, it can be seen that the final grade score is 0.4326.
+
 ```
-Scores for while the quad is following behind the target. 
+#Scores for while the quad is following behind the target. 
 number of validation samples intersection over the union evaulated on 542
 average intersection over union for background is 0.9963649904368955
 average intersection over union for other people is 0.374343463883581
@@ -121,4 +136,6 @@ number true positives: 123, number false positives: 1, number false negatives: 1
 # Final grade score
 0.432598703219
 ```
+# Conclusion
 # Future Enhancements
+In m
