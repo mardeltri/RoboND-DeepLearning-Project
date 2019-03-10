@@ -79,7 +79,7 @@ In the following image a squeme of the network has been depicted.
 
 ### Hyperparameters
 
-The parameters which have been used to train the network can be found below. 
+The parameters which have been used to train the network are:
 
 * learning_rate = 0.001
 * batch_size = 32
