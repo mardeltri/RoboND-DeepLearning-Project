@@ -61,6 +61,7 @@ layers to upsample the image.
 
 The implemented network has three encoders, 1x1 convolution layers and 3 decoders, as it can be seen below.
 
+```
 Features Layer (?, 160, 160, 3)
 Encoder 1 (?, 80, 80, 32)
 Encoder 2 (?, 40, 40, 64)
@@ -70,15 +71,17 @@ Decoder 1 (?, 40, 40, 128)
 Decoder 2 (?, 80, 80, 64)
 Decoder 3 (?, 80, 80, 64)
 Output Layer (?, 160, 160, 3)
+```
 
 In the following image a squeme of the network has been depicted.
 
-<img src="./misc_images/Network.png" width="350" />
+<img src="./misc_images/Network.png" width="450" />
 
 ### Hyperparameters
 
 ### Results
 
+```
 Scores for while the quad is following behind the target. 
 number of validation samples intersection over the union evaulated on 542
 average intersection over union for background is 0.9963649904368955
@@ -108,5 +111,5 @@ number true positives: 123, number false positives: 1, number false negatives: 1
 
 # Final grade score
 0.432598703219
-
+```
 # Future Enhancements
