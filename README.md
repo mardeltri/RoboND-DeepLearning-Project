@@ -3,7 +3,7 @@
 [//]: # (Image References)
 
 [main]: ./misc_images/main.png
-[run1_crowd]: ./misc_images/run1_crowd.PNG
+[run1_crowd]: ./misc_images/run1_crowd.png
 [run2_short]: ./misc_images/run2_short.png
 [run3_zigzag]: ./misc_images/run3_zigzag.png
 [PatrolPath]: ./misc_images/PatrolPath.png
