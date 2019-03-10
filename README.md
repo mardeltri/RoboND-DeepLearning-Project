@@ -11,7 +11,7 @@
 [withoutTarget]: ./misc_images/withoutTarget.png
 [withTarget]: ./misc_images/withTarget.png
 
-![Main][main]
+<img src="./misc_images/main.png" width="350" />
 
 In this project, a Fully Convolutional Network will be implemented and trained to detect a person with a
 quadrotor. This simulation will be carried out in the provided FollowMeSim, which includes a city with people 
