@@ -137,5 +137,13 @@ number true positives: 123, number false positives: 1, number false negatives: 1
 0.432598703219
 ```
 # Conclusion
+This network architecture could be used to follow another objects, however, it is clear that this training set is not valid for that purpose.
+We would have to create a new set of images for both training and validation procedures. In general, this kind of network squeme could be 
+used to carry out object recognition. For example it could be used for self-driving cars to recognize road markings, traffic lights or pedestrians.
+But, always, those applications could be carried out by training the network with a specific data set.
+
+
 # Future Enhancements
-In m
+In my opinion, the network could be improved implementing a deeper network in order to distinguish more features, thus increasing accuracy. In addition,
+I think that increasing epochs or fine tuning the learning rate, the final grade score could be greater. As for the images, I think that the set is quite 
+diverse, because images have been gathered in four different situations, appart from the default provided images.
