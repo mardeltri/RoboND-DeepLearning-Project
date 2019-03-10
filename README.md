@@ -81,12 +81,12 @@ In the following image a squeme of the network has been depicted.
 
 The parameters which have been used to train the network can be found below. 
 
-*learning_rate = 0.001
-*batch_size = 32
-*num_epochs = 30
-*steps_per_epoch = int(7941/batch_size)-1
-*validation_steps = int(3617/batch_size)
-*workers = 2
+* learning_rate = 0.001
+* batch_size = 32
+* num_epochs = 30
+* steps_per_epoch = int(7941/batch_size)-1
+* validation_steps = int(3617/batch_size)
+* workers = 2
 
 Those parameters have been found by tunning manually the network. Initially, a higher learning rate value was set up, 
 but it was notice that the network was learning too fast. It was observed that increasing the number of epochs leads to
