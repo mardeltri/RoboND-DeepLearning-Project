@@ -47,7 +47,7 @@ With those simulations the total number of train images are 7941 and 3617 valida
 Given the type of identification that we need in this project, we will be working with Fully Convolutional Networks(FCNs).
 This kind of network is used when detecting an object between several ones. In our case, we have a person in a city
 surrounded by other people. This is made possible because fully convolutional networks preserve spatial information
-while doing the convolution.
+while doing the convolution. It is important to point out that FCN's carry out a pixel-wise classification on images.
 
 FCNs take advantage of three special techniques:
 * Replace fully connected layers with one by one convolutional layers
@@ -57,7 +57,20 @@ more precise segmentation decisions.
 
 The network consists in three main parts, the encoder, the 1x1 convolution layer and the decoder. The encoder extracts 
 features from the layers that will be used later by the decoder, which uses a technique of transposed convolutional 
-layers to upsample the image.
+layers to upsample the image. 
+
+The 1x1 convolution layer is in a normal convolution with a set of filters of dimensions: 1x1x(filter size),
+stride = 1, and zero padding. With respect to a fully connected layer, a 1x1 convolution layer keeps spatial 
+information of all pixels. This is due to the fact that, when using a fully connected layer, the 4D output tensor
+of a convolutional layer is flattened into a 2D tensor to be fed to the fully connected layer. So, when flattening the
+tensor, spatial information is missed. Furthermore, a 1x1 convolution layer helps to reduce the dimensionality of the layer.
+It worths mention that a fully-connected layer of the same size would result in the same number of features, however, 
+they are not able to receive images of any size, which is another advantage of using a 1x1 convolution layer.
+
+Skip connections are really useful to retain information from first layers because while carrying out the 
+convolutions you look too close that you may lose the overall picture. Skip connections works connecting the output of
+one layer to a non-adjacent layer using the element-wise addition operation. Thus, the network is able to use 
+information from multiple image sizes and can make more precise segmentation decisions.
 
 The implemented network has three encoders, 1x1 convolution layers and 3 decoders, as it can be seen below.
 
